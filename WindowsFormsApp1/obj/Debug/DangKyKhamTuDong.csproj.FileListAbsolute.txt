@@ -1,0 +1,178 @@
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.exe.config
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.Properties.Resources.resources
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.GenerateResource.Cache
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.exe.licenses
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.exe
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.pdb
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Data.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Utils.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraGrid.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraLayout.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraBars.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Office.v14.1.Core.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Data.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Utils.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraEditors.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraGrid.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraLayout.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraPrinting.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Emgu.CV.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Emgu.CV.UI.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Emgu.Util.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Sparkline.v14.1.Core.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraBars.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.XtraTreeList.v14.1.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DevExpress.Office.v14.1.Core.xml
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.Data.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.Data.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.Data.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.Data.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraEditors.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraEditors.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraEditors.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraEditors.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraGrid.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraGrid.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraGrid.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraGrid.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraLayout.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraLayout.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraLayout.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraLayout.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraBars.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraBars.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraBars.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraBars.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.exe
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.pdb
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.frm_Face.resources
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.frm_DangKyKham.resources
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.AssemblyReference.cache
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.CoreCompileInputs.cache
+D:\My Projects\NamDinh Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.CopyComplete
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.exe.config
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.exe
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DangKyKhamTuDong.pdb
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Data.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Utils.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraGrid.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraLayout.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraBars.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Office.v14.1.Core.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Data.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Utils.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraEditors.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraGrid.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraLayout.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraPrinting.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\Emgu.CV.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\Emgu.CV.UI.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\Emgu.Util.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Sparkline.v14.1.Core.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraBars.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.XtraTreeList.v14.1.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\DevExpress.Office.v14.1.Core.xml
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.Data.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.Data.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.Data.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.Data.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraEditors.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraEditors.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraEditors.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraEditors.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraGrid.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraGrid.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraGrid.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraGrid.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraLayout.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraLayout.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraLayout.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraLayout.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraBars.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraBars.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraBars.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraBars.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.AssemblyReference.cache
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.frm_Face.resources
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.frm_DangKyKham.resources
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.Properties.Resources.resources
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.GenerateResource.cache
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.exe.licenses
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.csproj.CoreCompileInputs.cache
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKh.4AF9D47F.Up2Date
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.exe
+D:\Porjects\DangKyKham\WindowsFormsApp1\obj\Debug\DangKyKhamTuDong.pdb
