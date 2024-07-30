@@ -1206,11 +1206,11 @@ namespace DangKyKhamTuDong
                         SotheBHYT = ThongTinThe.Substring(2, ViTri - 2);
                         txtMaThe.Text = MaDTthe + "-" + SotheBHYT;
 
-                        LoadData_Old(MaDTthe, SotheBHYT);
+                        if(LoadData_Old(MaDTthe, SotheBHYT)) return; //Neu da co du lieu cu thi bo qua luon
                         if (SotheBHYT.Length > 13)
                         {
-                            txtMaThe.Text = SotheBHYT;
-                            //tenBHYTTinh = LayTenCoquanBHYT(SotheBHYT.Substring(1, 2));
+                            //txtMaThe.Text = SotheBHYT;
+                            tenBHYTTinh = LayTenCoquanBHYT(SotheBHYT.Substring(1, 2));
 
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             ViTri = ThongTinThe.IndexOf("|");
@@ -1221,7 +1221,9 @@ namespace DangKyKhamTuDong
                             {
                                 NamSinh = Convert.ToInt32(ThongTinThe.Substring(6, 4));
                                 NgaySinh = Convert.ToInt32(ThongTinThe.Substring(0, 2));
+                                txtNgaySinh.Text = NgaySinh.ToString();
                                 ThangSinh = Convert.ToInt32(ThongTinThe.Substring(3, 2));
+                                txtThangSinh.Text = ThangSinh.ToString();
                             }
                             else
                                 NamSinh = Convert.ToInt32(ThongTinThe.Substring(0, 4));
@@ -1229,7 +1231,7 @@ namespace DangKyKhamTuDong
                             ViTri = ThongTinThe.IndexOf("|");
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             GioiTinh = Convert.ToInt32(Convert.ToDouble(ThongTinThe.Substring(0, 1)) - (double)1);
-
+                            cmbGioiTinh.SelectedIndex = GioiTinh;
                             ViTri = ThongTinThe.IndexOf("|");
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             ViTri = ThongTinThe.IndexOf("|");
@@ -1265,8 +1267,11 @@ namespace DangKyKhamTuDong
                             if (ThongTinThe.IndexOf("|") > 5)
                             {
                                 NamSinh = Convert.ToInt32(ThongTinThe.Substring(6, 4));
+                                NamSinh = Convert.ToInt32(ThongTinThe.Substring(6, 4));
                                 NgaySinh = Convert.ToInt32(ThongTinThe.Substring(0, 2));
+                                txtNgaySinh.Text = NgaySinh.ToString();
                                 ThangSinh = Convert.ToInt32(ThongTinThe.Substring(3, 2));
+                                txtThangSinh.Text = ThangSinh.ToString();
                             }
                             else
                                 NamSinh = Convert.ToInt32(ThongTinThe.Substring(0, 4));
@@ -1275,18 +1280,22 @@ namespace DangKyKhamTuDong
                             ViTri = ThongTinThe.IndexOf("|");
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             GioiTinh = Convert.ToInt32(Convert.ToDouble(ThongTinThe.Substring(0, 1)) - (double)1);
+                            cmbGioiTinh.SelectedIndex = GioiTinh;
                             ViTri = ThongTinThe.IndexOf("|");
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             ViTri = ThongTinThe.IndexOf("|");
                             DiaChi = FromHex(ThongTinThe.Substring(0, ViTri));
+                            txtDiaChi.Text = DiaChi;
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             ViTri = ThongTinThe.IndexOf("|");
                             NoiDKKCBBD = ThongTinThe.Substring(0, ViTri).Replace(" ", "").Replace("-", "");
+                            txtManoiDKKCBBD.Text = NoiDKKCBBD;
                             ThongTinThe = ThongTinThe.Substring(ViTri + 1);
                             ViTri = ThongTinThe.IndexOf("|");
                             string strTu = ThongTinThe.Substring(0, ViTri);
                             string[] strHanTu = strTu.Split('/');
                             HanTu = new DateTime(Convert.ToInt32(strHanTu[2]), Convert.ToInt32(strHanTu[1]), Convert.ToInt32(strHanTu[0]));
+                            dtBHTu.Value = HanTu;
                             if (ThongTinThe.Substring(ViTri + 1, 1) == "-")
                             {
                                 ThongTinThe = ThongTinThe.Substring(ViTri + 3);
@@ -1294,7 +1303,7 @@ namespace DangKyKhamTuDong
                                 string strDen = ThongTinThe.Substring(0, ViTri);
                                 string[] strHanDen = strTu.Split('/');
                                 HanDen = new DateTime(Convert.ToInt32(ThongTinThe.Substring(6, 4)), Convert.ToInt32(ThongTinThe.Substring(3, 2)), Convert.ToInt32(ThongTinThe.Substring(0, 2))); // Convert.ToDateTime(ThongTinThe.Substring(0, ViTri));
-                                                                                                                                                                                                 // dtBHDen.Value = HanDen
+                                dtBHDen.Value = HanDen;                                                                                                                                                                 // dtBHDen.Value = HanDen
                                 int i;
                                 for (i = 0; i < 4; i++)
                                 {
@@ -1310,7 +1319,7 @@ namespace DangKyKhamTuDong
                                 string strDen = ThongTinThe.Substring(0, ViTri);
                                 string[] strHanDen = strTu.Split('/');
                                 HanDen = new DateTime(Convert.ToInt32(ThongTinThe.Substring(6, 4)), Convert.ToInt32(ThongTinThe.Substring(3, 2)), Convert.ToInt32(ThongTinThe.Substring(0, 2))); // Convert.ToDateTime(ThongTinThe.Substring(0, ViTri));
-
+                                dtBHDen.Value = HanDen;
                                 ThongTinThe = ThongTinThe.Substring(ViTri + 11);
                                 // dtBHDen.Value = HanDen
                                 int i;
@@ -1509,7 +1518,7 @@ namespace DangKyKhamTuDong
             return kq;
         }
 
-        private void LoadData_Old(string MaDT, string MaThe)
+        private bool LoadData_Old(string MaDT, string MaThe)
         {
             isUTien = false;
             SqlConnection CALL_ConnectSQL = new SqlConnection();
@@ -1618,12 +1627,16 @@ namespace DangKyKhamTuDong
                         MienChiTraTrongNam = (ds.Tables["Hoso"].Rows[0]["MienChiTraTrongNam"].ToString() == "1" ? true : false);
                         TenBHYTTinh = ds.Tables["Hoso"].Rows[0]["NoicaptheBHYT"].ToString();                    
                 }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {
-              
+                return false;
             }
-            
+            return true;
         }
     }
 
