@@ -208,21 +208,47 @@ namespace DangKyKhamTuDong
             HanTu = new DateTime(Convert.ToInt32(strHanTu[2]), Convert.ToInt32(strHanTu[1]), Convert.ToInt32(strHanTu[0])); ;
 
             // 'Thuc hien kiem tra tren cong de lay thong tin the day du: MaDT + muc huong + the
-            //CheckTheBHYT_2021(txtMaThe.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), NamSinh.ToString());
-            //if (MaKetQua != "000" & MaKetQua != "001" & MaKetQua != "002" & MaKetQua != "130")
-            //{
-            //    MessageBox.Show(Mes);
-            //}
-            //else
-            //{
-            //    txtMaThe.Text = thebhyt2018.maThe.Substring(2);
-            //    MaDTthe = thebhyt2018.maThe.Substring(0, 2);
-            //    HanTu = new DateTime(Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[2]), Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[1]), Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[0]));
-            //    HanDen = new DateTime(Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[2]), Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[1]), Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[0]));
-            //    TgDu5Nam = new DateTime(Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[2]), Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[1]), Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[0]));
-            //}
+            CheckTheBHYT2024(txtMaThe.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), NamSinh.ToString());
+            if (MaKetQua != "000" & MaKetQua != "001" & MaKetQua != "002" & MaKetQua != "130")
+            {
+                MessageBox.Show(Mes);
+            }
+            else
+            {
+                txtMaThe.Text = thebhyt2018.maThe.Substring(2);
+                MaDTthe = thebhyt2018.maThe.Substring(0, 2);
+                if(!LoadData_Old(MaDTthe, txtMaThe.Text.Trim()))
+                {
+                    txtMaThe.Text = thebhyt2018.maThe.Substring(0, 2) + "-" + thebhyt2018.maThe.Substring(2);
+                    MaDTthe = thebhyt2018.maThe.Substring(0, 2);
+                    dtBHTu.Value = Convert.ToDateTime(thebhyt2018.gtTheTu);
+                    dtBHDen.Value = Convert.ToDateTime(thebhyt2018.gtTheDen);
+                    txtManoiDKKCBBD.Text = thebhyt2018.maDKBD;
+                    //Set_LoaiTuyen(txtManoiDKKCBBD.Text.Trim);
+                    txtManoiDKKCBBD_Validated(); //null/* TODO Change to default(_) if this is not a reference type */, null/* TODO Change to default(_) if this is not a reference type */);
+                    cmbGioiTinh.SelectedIndex = thebhyt2018.gioiTinh.ToUpper() == "NAM" ? 0 : 1;
+                    txtDiaChi.Text = thebhyt2018.diaChi;
+                    Read_DiaChi_2_Combo(txtDiaChi.Text.Trim());
+                    TgDu5Nam = Convert.ToDateTime(thebhyt2018.ngayDu5Nam);
 
-            LoadData_Old(MaDTthe, txtMaThe.Text.Trim());
+                    if (MaDTthe.ToUpper() == "TE" | MaDTthe.ToUpper() == "CK" | MaDTthe.ToUpper() == "CC")
+                        chkUuTien.Checked = true;
+
+                    if (MaDTthe.ToUpper() == "HT" & thebhyt2018.maThe.Substring(2).Substring(0, 1) == "1")
+                        chkUuTien.Checked = true;
+                    if (thebhyt2018.maKV == "K1" | thebhyt2018.maKV == "K2" | thebhyt2018.maKV == "K3")
+                        khuVuc = thebhyt2018.maKV;
+                    else
+                    {
+                        khuVuc = "";
+                    }
+                }    
+                //HanTu = new DateTime(Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[2]), Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[1]), Convert.ToInt32(thebhyt2018.gtTheTu.Split('/')[0]));
+                //HanDen = new DateTime(Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[2]), Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[1]), Convert.ToInt32(thebhyt2018.gtTheDen.Split('/')[0]));
+                //TgDu5Nam = new DateTime(Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[2]), Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[1]), Convert.ToInt32(thebhyt2018.ngayDu5Nam.Split('/')[0]));
+            }
+
+            
             // 0204287018|486fc3a06e67205875c3a26e2048e1baa56e|30/07/1981|1|-|79 - 034|01/02/2021|-|20/02/2021|79020204287018|-|4| 01/01/2015|15e89ac07ee8517f-7102|4|5175e1baad6e2031322c205468c3a06e68207068e1bb912048e1bb93204368c3ad204d696e68|$
             //if (txtMaDT.Text.Trim.ToUpper == "TE" | txtMaDT.Text.Trim.ToUpper == "CK" | txtMaDT.Text.Trim.ToUpper == "CC"]
             //    chkUuTien.Checked = true;
@@ -387,7 +413,7 @@ namespace DangKyKhamTuDong
                     {
                         if (MessageBox.Show("Bệnh nhân đã có trong CSDL nhưng chưa có thông tin Bảo hiểm y tế. Bạn có muốn thực hiện check thông tin trên cổng BHYT?", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            CheckTheBHYT2018(txt_SoCCCD.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), txtNamSinh.Text);
+                            CheckTheBHYT2024(txt_SoCCCD.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), txtNamSinh.Text);
                             if (MaKetQua != "000" & MaKetQua != "001" & MaKetQua != "002" & MaKetQua != "130")
                             {
                                 //FrmMes frm = new FrmMes();
@@ -443,7 +469,7 @@ namespace DangKyKhamTuDong
                 }
                 else if (MessageBox.Show("Bệnh nhân chưa có trong CSDL. Bạn có muốn thực hiện check thông tin trên cổng BHYT?", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    CheckTheBHYT2018(txt_SoCCCD.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), txtNamSinh.Text);
+                    CheckTheBHYT2024(txt_SoCCCD.Text.Trim(), txtHoTen.Text.Trim().ToUpper(), txtNamSinh.Text);
                     if (MaKetQua != "000" & MaKetQua != "001" & MaKetQua != "002" & MaKetQua != "130")
                     {
                         //FrmMes frm = new FrmMes();
@@ -589,9 +615,9 @@ namespace DangKyKhamTuDong
         }
 
         // Public lskb As List(Of clsLichSuKCB)
-        //public List<clsLichSuKCB2018> lskb2018;
+        public List<clsLichSuKCB2018> lskb2018;
         public string Mes = "";
-        private bool CheckTheBHYT2018(string MaThe, string HoTen, string NgaySinh)
+        private bool CheckTheBHYT2024(string MaThe, string HoTen, string NgaySinh)
         {
 
             if (!GetSession())
@@ -601,17 +627,16 @@ namespace DangKyKhamTuDong
             values.Add("maThe", MaThe);
             values.Add("hoTen", HoTen);
             values.Add("ngaySinh", NgaySinh);
+            values.Add("hoTenCb", "");
+            values.Add("hoTenCb", "");
             bool kq = true;
-            byte[] response = client.UploadValues(string.Format("https://egw.baohiemxahoi.gov.vn/api/egw/NhanLichSuKCB2018?" + "token={0}&id_token={1}&username={2}&password={3}", Access_Token, IDToken, "36001_BV", getMd5Hash("123456")), values);
+            byte[] response = client.UploadValues(string.Format("https://egw.baohiemxahoi.gov.vn/api/egw/KQNhanLichSuKCB2024?" + "token={0}&id_token={1}&username={2}&password={3}", Access_Token, IDToken, "36001_BV", getMd5Hash("123456")), values);
             string responseString = Encoding.UTF8.GetString(response);
             string[] SwitchKeys = new[] { "dsLichSuKCB2018\":", "dsLichSuKT2018\":" };
             string[] ValuesKeys = responseString.Split(SwitchKeys, StringSplitOptions.RemoveEmptyEntries);
             ValuesKeys[0] = ValuesKeys[0].Substring(0, ValuesKeys[0].Length - 2) + "}";
             thebhyt2018 = JsonConvert.DeserializeObject<clsTheBHYT2018>(ValuesKeys[0]);
-            // Dim ns As String() = thebhyt2018.ngaySinh.Split["/"]
-            // thebhyt2018.Day_NS = ns[0]
-            // thebhyt2018.Month_NS = ns(1)
-            // thebhyt2018.Year_NS = ns(2)
+           
             MaKetQua = thebhyt2018.maKetQua;
             switch (MaKetQua)
             {
@@ -633,7 +658,7 @@ namespace DangKyKhamTuDong
                     {
                         ValuesKeys[1] = ValuesKeys[1].Substring(0, ValuesKeys[1].Length - 2);
                         ValuesKeys[2] = ValuesKeys[2].Substring(0, ValuesKeys[2].Length - 1);
-                        // List<clsLichSuKCB2018> lskb2018 = JsonConvert.DeserializeObject<List<clsLichSuKCB2018>>(ValuesKeys[1]);
+                         lskb2018 = JsonConvert.DeserializeObject<List<clsLichSuKCB2018>>(ValuesKeys[1]);
                         //List<clsLichSuKT2018> lskt2018 = JsonConvert.DeserializeObject<List<clsLichSuKT2018>>(ValuesKeys[2]);
                         switch (MaKetQua)
                         {
@@ -775,189 +800,7 @@ namespace DangKyKhamTuDong
             return kq;
         }
 
-        private bool CheckTheBHYT_2021(string MaThe, string HoTen, string NgaySinh)
-        {
-
-            if (!GetSession_2021())
-                return false;
-            client = new WebClient();
-            values = new NameValueCollection();
-            values.Add("maThe", MaThe);
-            values.Add("hoTen", HoTen);
-            values.Add("ngaySinh", NgaySinh);
-            bool kq = true;
-            byte[] response = client.UploadValues(string.Format("http://ctndaotao.bhxh.gov.vn/api/egw/NhanLichSuKCB2018?" + "token={0}&id_token={1}&username={2}&password={3}", Access_Token, IDToken, "36001_BV", getMd5Hash("123456")), values);
-            string responseString = Encoding.UTF8.GetString(response);
-            string[] SwitchKeys = new[] { "dsLichSuKCB2018\":", "dsLichSuKT2018\":" };
-            string[] ValuesKeys = responseString.Split(SwitchKeys, StringSplitOptions.RemoveEmptyEntries);
-            ValuesKeys[0] = ValuesKeys[0].Substring(0, ValuesKeys[0].Length - 2) + "}";
-            thebhyt2018 = JsonConvert.DeserializeObject<clsTheBHYT2018>(ValuesKeys[0]);
-            // Dim ns As String() = thebhyt2018.ngaySinh.Split["/"]
-            // thebhyt2018.Day_NS = ns[0]
-            // thebhyt2018.Month_NS = ns(1)
-            // thebhyt2018.Year_NS = ns(2)
-            MaKetQua = thebhyt2018.maKetQua;
-            switch (MaKetQua)
-            {
-                case "401":
-                    {
-                        Mes = "Lỗi xác thực tại máy trạm";
-                        kq = false;
-                        break;
-                    }
-
-                case "500":
-                    {
-                        Mes = "Lỗi khi kết nối tới cổng giám định BHYT";
-                        kq = false;
-                        break;
-                    }
-
-                default:
-                    {
-                        ValuesKeys[1] = ValuesKeys[1].Substring(0, ValuesKeys[1].Length - 2);
-                        ValuesKeys[2] = ValuesKeys[2].Substring(0, ValuesKeys[2].Length - 1);
-                        // List<clsLichSuKCB2018> lskb2018 = JsonConvert.DeserializeObject<List<clsLichSuKCB2018>>(ValuesKeys[1]);
-                        //List<clsLichSuKT2018> lskt2018 = JsonConvert.DeserializeObject<List<clsLichSuKT2018>>(ValuesKeys[2]);
-                        switch (MaKetQua)
-                        {
-                            case "000":
-                                {
-                                    Mes = "Thông tin thẻ chính xác";
-                                    break;
-                                }
-
-                            case "001":
-                                {
-                                    Mes = "Thẻ do Bộ quốc phòng quản lý, yêu cầu trình giấy tờ tùy thân";
-                                    break;
-                                }
-
-                            case "002":
-                                {
-                                    Mes = "Thẻ do Bộ công an quản lý, yêu cầu trình giấy tờ tùy thân";
-                                    break;
-                                }
-
-                            case "003":
-                                {
-                                    Mes = "Thẻ cũ hết giá trị sử dụng nhưng đã được cấp thẻ mới";
-                                    break;
-                                }
-
-                            case "010":
-                                {
-                                    Mes = "Thẻ hết giá trị sử dụng";
-                                    break;
-                                }
-
-                            case "051":
-                                {
-                                    Mes = "Mã thẻ không đúng";
-                                    break;
-                                }
-
-                            case "052":
-                                {
-                                    Mes = "Mã tỉnh cấp thẻ (ký tự thứ 4,5 của mã thẻ) không đúng";
-                                    break;
-                                }
-
-                            case "053":
-                                {
-                                    Mes = "Mã quyền lợi thẻ(ký tự thứ 3 của mã thẻ) không đúng";
-                                    break;
-                                }
-
-                            case "050":
-                                {
-                                    Mes = "Không tìm thấy thông tin thẻ bhyt";
-                                    break;
-                                }
-
-                            case "060":
-                                {
-                                    Mes = "Thẻ sai họ tên";
-                                    break;
-                                }
-
-                            case "061":
-                                {
-                                    Mes = "Thẻ sai họ tên(Đúng ký tự đầu)";
-                                    break;
-                                }
-
-                            case "070":
-                                {
-                                    Mes = "Thẻ sai ngày sinh";
-                                    break;
-                                }
-
-                            case "100":
-                                {
-                                    Mes = "Lỗi khi lấy dữ liệu số thẻ";
-                                    break;
-                                }
-
-                            case "101":
-                                {
-                                    Mes = "Lỗi máy chủ tại cổng giám định BHYT";
-                                    break;
-                                }
-
-                            case "110":
-                                {
-                                    Mes = "Thẻ đã thu hồi";
-                                    break;
-                                }
-
-                            case "120":
-                                {
-                                    Mes = "Thẻ đã báo giảm";
-                                    break;
-                                }
-
-                            case "121":
-                                {
-                                    Mes = "Thẻ đã báo giảm. Giảm chuyển ngoại tỉnh";
-                                    break;
-                                }
-
-                            case "122":
-                                {
-                                    Mes = "Thẻ đã báo giảm. Giảm chuyển nội tỉnh";
-                                    break;
-                                }
-
-                            case "123":
-                                {
-                                    Mes = "Thẻ đã báo giảm. Thu hồi do tăng tại cùng đơn vị";
-                                    break;
-                                }
-
-                            case "124":
-                                {
-                                    Mes = "Thẻ đã báo giảm. Ngừng tham gia";
-                                    break;
-                                }
-
-                            case "130":
-                                {
-                                    Mes = "Trẻ em không xuất trình thẻ";
-                                    break;
-                                }
-
-                            default:
-                                {
-                                    Mes = "Lỗi không xác định";
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-            }
-            return kq;
-        }
+       
 
         private void txt_SoCCCD_KeyUp(object sender, KeyEventArgs e)
         {
@@ -1473,50 +1316,7 @@ namespace DangKyKhamTuDong
         }
 
 
-        private bool GetSession_2021()
-        {
-            client = new WebClient();
-            values = new NameValueCollection();
-            values.Add("username", "36001_BV");
-            values.Add("password", getMd5Hash("123456"));
-            byte[] response = client.UploadValues("http://ctndaotao.bhxh.gov.vn/api/token/take", values);
-            string responseString = Encoding.UTF8.GetString(response);
-            string[] SwitchKeys = new[] { "\"maKetQua\"", "\"APIKey\"", "\"access_token\"", "\"id_token\"", "\"token_type\"" };
-            string[] ValuesKeys = responseString.Split(SwitchKeys, StringSplitOptions.None);
-            MaKetQua = ValuesKeys[1].Substring(2, 3);
-            bool kq = true;
-            switch (MaKetQua)
-            {
-                case "200":
-                    {
-                        Access_Token = ValuesKeys[3].Substring(0, ValuesKeys[3].Length - 2).Substring(2, ValuesKeys[3].Length - 4);
-                        IDToken = ValuesKeys[4].Substring(0, ValuesKeys[4].Length - 2).Substring(2, ValuesKeys[4].Length - 4);
-                        break;
-                    }
-
-                case "401":
-                    {
-                        Mes = "Lỗi xác thực tại máy trạm";
-                        kq = false;
-                        break;
-                    }
-
-                case "500":
-                    {
-                        Mes = "Lỗi khi kết nối tới cổng giám định BHYT";
-                        kq = false;
-                        break;
-                    }
-
-                default:
-                    {
-                        Mes = "Lỗi không xác định";
-                        kq = false;
-                        break;
-                    }
-            }
-            return kq;
-        }
+       
 
         private bool LoadData_Old(string MaDT, string MaThe)
         {
@@ -1664,4 +1464,17 @@ namespace DangKyKhamTuDong
         public string gtTheTuMoi;
         public string gtTheDenMoi;
     }
+
+    public class clsLichSuKCB2018
+    {
+        public string maHoSo;
+        public string maCSKCB;
+        public string ngayVao;
+        public string ngayRa;
+        public string tenBenh;
+        public string tinhTrang;
+        public string kqDieuTri;
+        public string TEMP2;
+    }
+
 }
