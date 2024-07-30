@@ -163,7 +163,7 @@ namespace DangKyKhamTuDong
                   + "       case when HuongGQ > 0 then 1 else 0 end dakham,"
                   + "       case when HuongGQ = 0 then 1 else 0 end chokham"
                   + "   FROM NAMDINH_KHAMBENH.dbo.tblKHAMBENH_KQDVKHAM KQ"
-                  + "   WHERE KQ.Khoathuchien in ('NV13201', 'NV13204', 'NV13204', 'NV13221', 'NV13220', 'NV13212') and SUBSTRING(KQ.MaphieuCD ,3,6) = convert(varchar, getdate(), 12)"
+                  + "   WHERE KQ.Khoathuchien in ('NV13201', 'NV13204', 'NV13204', 'NV13221', 'NV13220', 'NV13212') and SUBSTRING(KQ.MaphieuCD ,3,6) = convert(varchar, dateadd(dd,-1,getdate()), 12)"
                    + "  ) C group by MaKhoa) T2 on T1.MaKhoa = T2.MaKhoa";
             Cmd = new SqlCommand(SQL, CALL_ConnectSQL);
             da.SelectCommand = Cmd;
@@ -901,7 +901,7 @@ namespace DangKyKhamTuDong
             using (var content = new StringContent(JsonConvert.SerializeObject(tpk), System.Text.Encoding.UTF8, "application/json"))
             {
                 HttpResponseMessage result = _httpClient.PostAsync(url, content).Result;
-                if(result.StatusCode.ToString() == "200")
+                if(result.StatusCode.ToString() == "OK")
                 {
                     dynamic json = JsonConvert.DeserializeObject(result.Content.ReadAsStringAsync().Result);
                     var qrObject = JsonConvert.DeserializeObject<ResultValues>(result.Content.ReadAsStringAsync().Result);
@@ -973,6 +973,13 @@ namespace DangKyKhamTuDong
                     Read_TheCCCD(txt_SoCCCD.Text.Trim());
                 else if (e.KeyCode == Keys.Enter & txt_SoCCCD.Text.Trim() != "" & txt_SoCCCD.Text.Trim().Split('|').Length == 7)
                     Read_TheCCCD(txt_SoCCCD.Text.Trim());
+        }
+
+        private void cardView1_Click(object sender, EventArgs e)
+        {
+            if (grv_PhongKham.RowCount < 1) return;
+            maPhongKham = cardView1.GetFocusedRowCellValue("MaKhoa").ToString();
+            maDichVu = cardView1.GetFocusedRowCellValue("MaDichvu").ToString();
         }
 
         private void grv_PhongKham_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)

@@ -730,7 +730,9 @@
             // cardView1
             // 
             this.cardView1.Appearance.CardCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cardView1.Appearance.CardCaption.Image = ((System.Drawing.Image)(resources.GetObject("cardView1.Appearance.CardCaption.Image")));
             this.cardView1.Appearance.CardCaption.Options.UseFont = true;
+            this.cardView1.Appearance.CardCaption.Options.UseImage = true;
             this.cardView1.Appearance.FieldCaption.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cardView1.Appearance.FieldCaption.ForeColor = System.Drawing.Color.DarkBlue;
             this.cardView1.Appearance.FieldCaption.Options.UseFont = true;
@@ -743,7 +745,8 @@
             this.cardView1.Appearance.HideSelectionCardCaption.Options.UseFont = true;
             this.cardView1.Appearance.SelectedCardCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cardView1.Appearance.SelectedCardCaption.Options.UseFont = true;
-            this.cardView1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.cardView1.AppearancePrint.CardCaption.Image = ((System.Drawing.Image)(resources.GetObject("cardView1.AppearancePrint.CardCaption.Image")));
+            this.cardView1.AppearancePrint.CardCaption.Options.UseImage = true;
             this.cardView1.CardCaptionFormat = " {2}";
             this.cardView1.CardInterval = 20;
             this.cardView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -767,6 +770,7 @@
             this.cardView1.OptionsView.ShowHorzScrollBar = false;
             this.cardView1.OptionsView.ShowQuickCustomizeButton = false;
             this.cardView1.PaintStyleName = "Skin";
+            this.cardView1.Click += new System.EventHandler(this.cardView1_Click);
             // 
             // gridColumn7
             // 
@@ -801,6 +805,8 @@
             // 
             // gridColumn13
             // 
+            this.gridColumn13.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn13.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.gridColumn13.Caption = "Số lượng đăng ký";
             this.gridColumn13.FieldName = "soluong";
             this.gridColumn13.Name = "gridColumn13";
@@ -809,6 +815,8 @@
             // 
             // gridColumn12
             // 
+            this.gridColumn12.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.gridColumn12.Caption = "Đã khám";
             this.gridColumn12.FieldName = "dakham";
             this.gridColumn12.Name = "gridColumn12";
@@ -817,7 +825,10 @@
             // 
             // gridColumn11
             // 
+            this.gridColumn11.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn11.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.gridColumn11.Caption = "Số bệnh nhân chờ khám:";
+            this.gridColumn11.FieldName = "chokham";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 3;
@@ -880,7 +891,6 @@
             this.MinimizeBox = false;
             this.Name = "frm_DangKyKham";
             this.ShowIcon = false;
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_DangKyKham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_face)).EndInit();
